@@ -195,7 +195,7 @@ public class NamePattern {
 			}
 			System.out.println();
 		}
-
+		sc.close();
 	}
 
 }
