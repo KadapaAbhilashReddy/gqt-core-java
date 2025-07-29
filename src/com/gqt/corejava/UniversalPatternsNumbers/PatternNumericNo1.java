@@ -23,7 +23,7 @@ public class PatternNumericNo1 {
 		int n = sc.nextInt();
 		for(int i = 0; i<n; i++) {
 			for(int j = 0; j<n; j++) {
-				if((i+j==(n/2) && i==(n/4)) || i==(n-1) || j==(n/2)) {
+				if((i+j==(n/2) && i<(n/2)) || i==(n-1) || j==(n/2)) {
 					System.out.print("# ");
 				}
 				else {

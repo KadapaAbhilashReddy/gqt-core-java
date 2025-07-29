@@ -23,7 +23,7 @@ public class PatternNumericNo10 {
 		int n = sc.nextInt();
 		for(int i = 0; i<n; i++) {
 			for(int j = 0; j<n; j++) {
-				if((i+j==(n/2) && i==(n/4)) || i==(n-1) || j==(n/2)) {
+				if((i+j==(n/2) && i<(n/2)) || i==(n-1) || j==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -32,7 +32,7 @@ public class PatternNumericNo10 {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(j==0 || i==0 || i==(n-1) || j==(n-1)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0 && i!=(n-1)) || (i==(n-1) && j!=0 && j!=(n-1)) || (j==(n-1) && i!=0 && i!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
