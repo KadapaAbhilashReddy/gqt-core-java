@@ -31,7 +31,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || j==0 || j==(n-1) || i==(n/2)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0) || (j==(n-1) && i!=0) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -40,7 +40,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || i==(n-1) || j==0 || j==(n-1)) {
+				if((i==0 && j!=(n-1)) || (i==(n-1) && j!=(n-1)) || j==0 || (j==(n-1) && i!=0 && i!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
@@ -49,7 +49,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || j==0 || j==(n-1) || i==(n/2)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0) || (j==(n-1) && i!=0) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -58,7 +58,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if((i==0  && j<=(n/2)) || (i==(n/2) && j<=(n/2)) || j==0 || (j==(n/2) && i<=(n/2))) {
+				if((i==0  && j!=(n-1)) || (i==(n/2) && j!=(n-1)) || j==0 || (i!=0  && j==(n-1) && i!=(n/2) && i!=0 && i<(n/2))) {
 					System.out.print("# ");
 				}
 				else {
@@ -67,7 +67,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || j==0 || j==(n-1) || i==(n/2)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0) || (j==(n-1) && i!=0) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -77,7 +77,7 @@ public class NamePattern {
 			System.out.print("\t");
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || j==0 || j==(n-1) || i==(n/2)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0) || (j==(n-1) && i!=0) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -86,7 +86,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if((i==0 && j<=(n/2)) || i+j==(n/2) || i-j==(n/2) || (i==(n-1) && j<=(n/2)) || j==0) {
+				if((i==0 && j!=(n-1)) || (i==(n-1) && j!=(n-1)) || j==0 || (j==(n-1) && i!=0 && i!=(n/2) && i!=(n-1)) || (i==(n/2) && j!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
@@ -122,7 +122,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || j==0 || j==(n-1) || i==(n/2)) {
+				if((i==0 && j!=0 && j!=(n-1)) || (j==0 && i!=0) || (j==(n-1) && i!=0) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -131,7 +131,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || i==(n-1) || (j==0 && i<=(n/2)) || (j==n-1 && i>=(n/2)) || i==(n/2)) {
+				if((i==0 && j!=0) || (i==(n-1) && j!=(n-1)) || (j==0 && i<=(n/2) && i!=0 && i!=(n/2)) || (j==n-1 && i>=(n/2) && i!=(n/2) && i!=(n-1)) || (i==(n/2) && j!=0 && j!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
@@ -150,7 +150,7 @@ public class NamePattern {
 			System.out.print("\t");
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if((i==0 && j<=(n/2)) || i+j==(n/2) || i-j==(n/2) || j==0) {
+				if((i==0  && j!=(n-1)) || (i==(n/2) && j!=(n-1)) || j==0 || (i!=0  && j==(n-1) && i!=(n/2) && i!=0 && i<(n/2)) || (i-j==(n/2)-2 && i>(n/2))) {
 					System.out.print("# ");
 				}
 				else {
@@ -159,7 +159,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || i==(n-1) || j==0 || i==(n/2)) {
+				if((i==0 && j!=0) || (i==(n-1) && j!=0) || (j==0 && i!=0 && i!=(n-1)) || i==(n/2)) {
 					System.out.print("# ");
 				}
 				else {
@@ -168,7 +168,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || i==(n-1) || j==0 || j==(n-1)) {
+				if((i==0 && j!=(n-1)) || (i==(n-1) && j!=(n-1)) || j==0 || (j==(n-1) && i!=0 && i!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
@@ -177,7 +177,7 @@ public class NamePattern {
 			}
 			System.out.print("\t");
 			for(int j = 0; j<n; j++) {
-				if(i==0 || i==(n-1) || j==0 || j==(n-1)) {
+				if((i==0 && j!=(n-1)) || (i==(n-1) && j!=(n-1)) || j==0 || (j==(n-1) && i!=0 && i!=(n-1))) {
 					System.out.print("# ");
 				}
 				else {
