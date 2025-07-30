@@ -1,5 +1,5 @@
 /**
- * Example of a Structured Two dimensional Constant array
+ * Example of a Structured Two dimensional Jagged Array for collecting multiple data
  */
 package com.gqt.corejava.Arrays;
 
@@ -8,19 +8,21 @@ import java.util.Scanner;
 /**
  * @author Abhilash Reddy
  * @category Array
- * @description Structured Example of a Two dimensional Constant Array in which we collect 3 students names in each 3 class
+ * @description Structured Example of a Two dimensional Jagged Array in which we collect n students names in each 3 class
  */
-class Code3 {
+class Code4 {
 	String arr[][];
 	Scanner sc = new Scanner(System.in);
 	void createArray() {
 		System.out.println("Enter Class count :");
 		int cls = sc.nextInt();
-		System.out.println("Enter Student count :");
-		int stu = sc.nextInt();
 	
 		//Creating an Array
-		arr = new String[cls][stu];
+		arr = new String[cls][];
+		for(int i = 0; i<arr.length; i++) {
+			System.out.println("Enter the number of students in class no-" + (i+1));
+			arr[i] = new String[sc.nextInt()];
+		}
 		System.out.println("Array Created");
 		System.out.println("---------------");
 	}
@@ -47,14 +49,14 @@ class Code3 {
 		System.out.println("----------------");
 	}
 }
-public class ArrayCode3 {
+public class ArrayCode4 {
 
 	/**
 	 * @param args
-	 * @description This source code represents the Structured Two dimensional Constant Array Example
+	 * @description This source code represents the Structured Two dimensional Jagged Array for multiple data collection Example
 	 */
 	public static void main(String[] args) {
-		Code3 c = new Code3();
+		Code4 c = new Code4();
 		c.createArray();
 		c.collectData();
 		c.displayData();

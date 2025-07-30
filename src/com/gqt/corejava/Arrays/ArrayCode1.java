@@ -1,5 +1,5 @@
 /**
- * Example of Unstructured Array
+ * Example of One dimensional Unstructured Array
  */
 package com.gqt.corejava.Arrays;
 
@@ -8,13 +8,13 @@ import java.util.Scanner;
 /**
  * @author Abhilash Reddy
  * @category Array
- * @description Example for Array
+ * @description Example for One Dmensional Array
  */
 public class ArrayCode1 {
 
 	/**
 	 * @param args
-	 * @description This source code represents the Unstructured Array Example  
+	 * @description This source code represents the One dimension Unstructured Array Example  
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

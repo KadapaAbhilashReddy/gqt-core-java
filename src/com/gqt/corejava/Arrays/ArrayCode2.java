@@ -1,5 +1,5 @@
 /**
- * Example of a Structured array
+ * Example of a One Dimensional Structured array
  */
 package com.gqt.corejava.Arrays;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
 /**
  * @author Abhilash Reddy
  * @category Array
- * @description Structured Example of an Array
+ * @description Structured Example of an One Dimensional Array
  */
-class ArrayOperations {
+class Code2 {
 	int arr[];
 	Scanner sc = new Scanner(System.in);
 	void createArray() {
@@ -42,10 +42,10 @@ public class ArrayCode2 {
 
 	/**
 	 * @param args
-	 * @description This source code represents the Structured Array Example
+	 * @description This source code represents the Structured One Dimensional Array Example
 	 */
 	public static void main(String[] args) {
-		ArrayOperations a0 = new ArrayOperations();
+		Code2 a0 = new Code2();
 		a0.createArray();
 		a0.collectData();
 		a0.displayData();
